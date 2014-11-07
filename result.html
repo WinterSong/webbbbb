@@ -1,0 +1,10 @@
+$def with (a,b)
+</br>
+<div> There are $len(a) results for $b<div>
+</br>
+$for i in a:
+	<a href=i.get("url")>
+		<em>$i.get("title")</em></br>
+	</a>
+	来源:$i.get('url')</br>
+	path:$i.get('path')</br>
